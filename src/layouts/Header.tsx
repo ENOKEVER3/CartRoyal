@@ -6,7 +6,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-   <Flex as="header" justify={"center"} p={10} gap={20} align={"center"}>
+   <Flex as="header" justify={"center"} px={10} py={5} gap={20} align={"center"}>
     <Logo />
     <SearchWidget />
     <ActionMenu />

@@ -3,9 +3,18 @@ const constants = {
         
     },
  categories:[
-        "Catgory 1",
-        "Catgory 2",
-        "Catgory 3"
+        "Books",
+        "Men",
+        "Women",
+        "Beauty",
+        "Kids and Mom",
+        "Toys and Game",
+        "Sport & Outdoor",
+        "Home",
+        "Electronics",
+        "Vehicles",
+        "Office & Stationaries",
+        "Assessories"
       ]
 }
 

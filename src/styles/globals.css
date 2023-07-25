@@ -11,8 +11,13 @@
   /* overflow-y: hidden; */
 }
 
+.swiper-menu{
+  color:#fff !important
+}
+
 button:hover{
   background-color: #323232 !important;
+  color: white;
 }
 
 ::-webkit-scrollbar {
