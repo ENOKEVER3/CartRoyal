@@ -22,7 +22,7 @@ import constants from "@/config/app";
 const CategoryMenu = () => {
   return (
     <Menu closeOnSelect={false}>
-      <MenuButton fontSize={"14px"} as={Flex}>
+      <MenuButton fontSize={"14px"} px={5} as={Flex}>
         Category
       </MenuButton>
       <MenuList minWidth="150px">
@@ -50,8 +50,8 @@ return (
       gap={4}
       as="form"
       align="center"
-      px={3}
-      py={1}
+      // px={3}
+      // py={1}
       borderRadius={10}
       border="1px solid #ddd"
     >

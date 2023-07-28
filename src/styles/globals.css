@@ -60,3 +60,7 @@ button {
   background: none !important;
   opacity: 0.7;
 }
+.heart{
+  background: #ff6b51a5;
+  color: #fff;
+}
