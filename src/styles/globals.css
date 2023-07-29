@@ -64,3 +64,36 @@ button {
   background: #ff6b51a5;
   color: #fff;
 }
+
+/* responsiveness */
+
+@media screen and (max-width:830px) {
+  .search-widget,.category-nav{
+    display: none !important;
+  }
+
+  .header{
+    justify-content: space-around !important;
+  }
+
+  .money-back-cta, .cta, .top-slider{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .cta .download-from{
+    justify-content: center;
+  }
+  .cta .cta-img{
+    margin: auto;
+    align-self: normal !important;
+  }
+}
+
+
+
+@media screen and (max-width:550px) {
+  .action-menu button{
+    display: none;
+  }
+}

@@ -22,10 +22,10 @@ import constants from "@/config/app";
 const CategoryMenu = () => {
   return (
     <Menu closeOnSelect={false}>
-      <MenuButton fontSize={"14px"} px={5} as={Flex}>
+      <MenuButton fontSize={"14px"} px={3} as={Flex}>
         Category
       </MenuButton>
-      <MenuList minWidth="150px">
+      <MenuList minWidth="100px">
         <MenuOptionGroup
           color={"#111"}
           defaultValue="ng"
@@ -45,13 +45,14 @@ const CategoryMenu = () => {
 
 const SearchWidget = () => {
 return (
-    <Flex
-      w="400px"
+    <Flex className="search-widget"
+      w="300px"
       gap={4}
       as="form"
       align="center"
       // px={3}
       // py={1}
+      p={2}
       borderRadius={10}
       border="1px solid #ddd"
     >

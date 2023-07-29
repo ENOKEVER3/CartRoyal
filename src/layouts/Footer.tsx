@@ -7,21 +7,21 @@ import { FaFacebook, FaInstagram, FaPhone, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <Box bg={'blue.50'} px={100}  >
-            <Flex alignItems={'flex-start'} justifyContent={'space-around'} >
-                <Box pt={150}>
+        <Box bg={'blue.50'} p={20}  pos={"relative"}>
+            <Flex className='cta' alignItems={'center'} justifyContent={'space-around'} >
+                <Box py={30}>
                     <Heading fontSize={70}>Get the App</Heading>
                     <Text fontWeight={500}>Buy and Sell Anything</Text>
                     <Text fontWeight={500}>Posting of Sales is Completly Free</Text>
                     <DownloadSource />
 
                 </Box>
-                <Image as={motion.img} pl={10} whileInView={{ y: -100, dur: 2 }} src='/assets/phones.png' />
+                <Image className='cta-img' as={motion.img} maxW={"500px"} alignSelf={"flex-end"} pl={10} src='/assets/phones.png' />
             </Flex>
 
             <Box>
-                <Flex py={10} gap={10}>
-                    <Box lineHeight={'50px'}>
+                <Flex className='footer' wrap={"wrap"} justify={"center"} py={10} gap={10}>
+                    <Box >
                         <Text fontWeight={800} fontSize={20} py={3}>CONTACT US</Text>
                         <Button leftIcon={<House variant='Bold' />} fontWeight={300} textAlign={'left'} bg={'none'} fontSize={'10px !important'}>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
@@ -34,7 +34,7 @@ const Footer = () => {
                             Email : CartRoyale@gmail.com
                         </Button>
                     </Box>
-                    <Box lineHeight={'50px'}>
+                    <Box>
                         <Text fontWeight={800} fontSize={20} py={3}>SUPPORT</Text>
                         <Text fontSize={10}>How it Works</Text>
                         <Text fontSize={10}>Become a Seller</Text>
@@ -45,7 +45,7 @@ const Footer = () => {
                         <Text fontSize={10}>Conflict Resolution Policy</Text>
 
                     </Box>
-                    <Box lineHeight={'50px'} mx={20}>
+                    <Box mx={20}>
                         <Text fontWeight={800} fontSize={20} py={3}>ABOUT CartRoyale</Text>
                         <Text fontSize={10}>About Us</Text>
                         <Text fontSize={10}>Contact US</Text>
@@ -54,20 +54,19 @@ const Footer = () => {
                         <Text fontSize={10}>Messages</Text>
 
                     </Box>
-                    <Box lineHeight={'50px'}>
+                    <Box>
                         <Text fontWeight={800} fontSize={20} py={3}>FOLLOW US ON</Text>
                         <Flex gap={5}>
-                            <IconButton bg={'none'} icon={<FaFacebook size={40} />} aria-label={''} />
-                            <IconButton bg={'none'} icon={<FaInstagram size={40} />} aria-label={''} />
-                            <IconButton bg={'none'} icon={<FaTwitter size={40} />} aria-label={''} />
+                            <IconButton bg={'none'} p={3} icon={<FaFacebook size={20} />} aria-label={''} />
+                            <IconButton bg={'none'} p={3} icon={<FaInstagram size={20} />} aria-label={''} />
+                            <IconButton bg={'none'} p={3} icon={<FaTwitter size={20} />} aria-label={''} />
                         </Flex>
                     </Box>
                 </Flex>
             </Box>
             <hr></hr>
-            <HStack gap={150} fontSize={10} py={2}>
-                <Text>2023 CartRoyale All Rigths Reserved</Text>
-                <HStack gap={20}>
+            <HStack rowGap={150} fontSize={10} py={2}>
+                <HStack py={5} flexWrap={"wrap"} rowGap={20}>
                     <Text>Privacy Policy</Text>
                     <Text>Terms of Service</Text>
                     <Text>Prohibited Items</Text>
@@ -77,7 +76,8 @@ const Footer = () => {
                 </HStack>
             </HStack>
             <hr></hr>
-            <Box py={10}></Box>
+                <Text fontSize={"13px"} py={5}>2023 CartRoyale All Rigths Reserved</Text>
+    
         </Box>
     )
 }

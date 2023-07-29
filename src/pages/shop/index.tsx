@@ -1,7 +1,7 @@
 import Catalogue from "@/components/Catalogue";
 import Features from "@/components/Features";
 import ProductCard from "@/components/ProductCard";
-import Products from "@/components/Products";
+import ProductsHeader from "@/components/ProductsHeader";
 import SliderMenu from "@/components/SliderMenu";
 import CategoryNav from "@/layouts/CategoryNav";
 import FeaturedCategories from "@/layouts/FeaturedCategories";
@@ -13,7 +13,10 @@ import TopNav from "@/layouts/TopNav";
 import { Box, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
-
+import { Heading, Image, Text } from "@chakra-ui/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 const index = () => {
   return (
     <>
@@ -30,22 +33,164 @@ const index = () => {
         <SliderMenu />
         <Features />
         <Catalogue />
-        <Products />
-        <Flex p={5} justifyContent={'center'} alignItems={'center'}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        </Flex>
-        <Flex p={5} justifyContent={'center'} alignItems={'center'}>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        </Flex>
+
+        {/* product lists start */}
+        <Box p={15} maxW={"1400px"} m="auto">
+          <ProductsHeader title="Recommended for you" />
+
+          <Swiper
+            className="swiper-menu"
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            breakpoints={{
+              // when window width is >= 640px
+              300:{
+                width:300,
+                slidesPerView:1.6
+              },
+              640: {
+                width: 640,
+                slidesPerView: 2,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 3,
+              },
+              1000: {
+                width: 1000,
+                slidesPerView: 4,
+              },
+
+              1400: {
+                width: 1400,
+                slidesPerView: 5,
+              },
+            }}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+          </Swiper>
+        </Box>
+        {/* product lists start */}
+
         <FeaturedCategories />
         <MoneyBack />
-        <NewlyListed />
+
+        {/* product lists start */}
+        <Box p={15} maxW={"1400px"} m="auto">
+          <ProductsHeader title="Newly Listed" />
+
+          <Swiper
+            className="swiper-menu"
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            breakpoints={{
+              // when window width is >= 640px
+              300:{
+                width:300,
+                slidesPerView:1.6
+              },
+              640: {
+                width: 640,
+                slidesPerView: 2,
+              },
+              // when window width is >= 768px
+              768: {
+                width: 768,
+                slidesPerView: 3,
+              },
+              1000: {
+                width: 1000,
+                slidesPerView: 4,
+              },
+
+              1400: {
+                width: 1400,
+                slidesPerView: 5,
+              },
+            }}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+          >
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <ProductCard />
+            </SwiperSlide>
+          </Swiper>
+        </Box>
+        {/* product lists start */}
+
         <Footer />
       </Box>
     </>

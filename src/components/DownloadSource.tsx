@@ -6,7 +6,7 @@ const DownloadSource = () => {
    <Box my={5}>
     <Text  fontSize={"11px"}>DOWNLOAD CART ROYAL SOON ON </Text>
 
-    <Flex gap={4} my={2}>
+    <Flex className='download-from' justify={"center"} wrap={"wrap"} gap={4} my={2}>
         <Image w="140px" src='/assets/google-play.png' />
         <Image w="140px" src='/assets/app-store.png' />
     </Flex>

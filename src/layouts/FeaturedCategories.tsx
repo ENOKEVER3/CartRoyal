@@ -8,7 +8,7 @@ const FeaturedCategories = () => {
         <Flex justifyContent={'space-around'} pb={7}>
         <Heading>Featured Categories</Heading>
         </Flex>
-        <Flex gap={2} alignItems={'center'}>
+        <Flex gap={2} wrap={"wrap"} alignItems={'center'}>
             <Box width={300} borderRadius={10} bg={'darkorange'} height={300}></Box>
             <Box>
             <Box my={1} width={200} borderRadius={10} bg={'darkorange'} height={150}></Box>

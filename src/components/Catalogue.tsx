@@ -11,7 +11,7 @@ const Catalogue = () => {
         </Text>
       </Center>
 
-      <Flex gap={10} justify={"center"} my={10}>
+      <Flex wrap={"wrap"} gap={10} justify={"center"} my={10}>
         <Circle p={8} bg={"#FFEBE1"}>
           <Image w={"100px"} src="/assets/catalogue/1.png" />
         </Circle>
@@ -26,7 +26,7 @@ const Catalogue = () => {
         </Circle>
       </Flex>
 
-      <Flex gap={10} justify={"center"} my={10}>
+      <Flex wrap={"wrap"} gap={10} justify={"center"} my={10}>
         <Circle p={8} bg={"#FFEBE1"}>
           <Image w={"100px"} src="/assets/catalogue/5.png" />
         </Circle>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <Flex p={10} align={"center"} justify={"space-around"} maxW="900px" mx="auto" gap={30}>
+    <Flex wrap={"wrap"} p={10} align={"center"} justify={"space-around"} maxW="900px" mx="auto" gap={30}>
 
 
     <Flex gap={1} direction={"column"} align={"center"} justify={"center"}>

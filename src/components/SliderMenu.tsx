@@ -16,13 +16,13 @@ const SliderMenu = () => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
     >
-      <Box pos={"relative"} minH="80vh" bg="#C1272D" as={SwiperSlide}>
+      <Box  pos={"relative"} minH="80vh" bg="#C1272D" as={SwiperSlide}>
         <Image
           pos={"absolute"}
           right={"-40%"}
           src="/assets/gradient-mask.png"
         />
-        <Flex justify={"space-between"} align={"center"} px={20}>
+        <Flex className="top-slider" justify={"space-between"} align={"center"} p={20}>
           <Box>
             <Heading fontSize={"3.5rem"} py={4}>
               Buy and Sell
