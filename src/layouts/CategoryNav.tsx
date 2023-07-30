@@ -9,8 +9,8 @@ const CategoryNav = () => {
       <Icon cursor={"pointer"} fontSize={25} as={Menu} />
       <Flex gap={10}>
         {constants.categories.map((cat, i) => (
-          <Link fontSize={12} href="" key={i}>
-            {cat}
+          <Link fontSize={12} href={cat.href} key={i}>
+            {cat.label}
           </Link>
         ))}
       </Flex>

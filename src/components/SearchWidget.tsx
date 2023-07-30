@@ -33,9 +33,10 @@ const CategoryMenu = () => {
           type="radio"
         >
           {constants.categories.map((cat, i) => (
-            <MenuItemOption color={"#111"} key={i} value={cat}>
-              {cat}
-            </MenuItemOption>
+          <Link href={cat.href}>
+            <MenuItemOption color={"#111"} key={i} value={cat.label}>
+              {cat.label}
+            </MenuItemOption></Link>
           ))}
         </MenuOptionGroup>
       </MenuList>
