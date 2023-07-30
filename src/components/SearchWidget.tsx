@@ -25,7 +25,7 @@ const CategoryMenu = () => {
       <MenuButton fontSize={"14px"} px={3} as={Flex}>
         Category
       </MenuButton>
-      <MenuList minWidth="100px">
+      <MenuList zIndex={10} minWidth="100px">
         <MenuOptionGroup
           color={"#111"}
           defaultValue="ng"
