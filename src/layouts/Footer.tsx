@@ -31,7 +31,7 @@ const Footer = () => {
                             Tel : +2349015061171
                         </Button> <br />
                         <Button leftIcon={<MessageProgramming variant='Bold' />} fontWeight={300} bg={'none'} fontSize={'10px !important'}>
-                            Email : CartRoyale@gmail.com
+                            Email : CartRoyal@gmail.com
                         </Button>
                     </Box>
                     <Box>
@@ -46,7 +46,7 @@ const Footer = () => {
 
                     </Box>
                     <Box mx={20}>
-                        <Text fontWeight={800} fontSize={20} py={3}>ABOUT CartRoyale</Text>
+                        <Text fontWeight={800} fontSize={20} py={3}>ABOUT CartRoyal</Text>
                         <Text fontSize={10}>About Us</Text>
                         <Text fontSize={10}>Contact US</Text>
                         <Text fontSize={10}>My Profile</Text>
@@ -76,7 +76,7 @@ const Footer = () => {
                 </HStack>
             </HStack>
             <hr></hr>
-                <Text fontSize={"13px"} py={5}>2023 CartRoyale All Rigths Reserved</Text>
+                <Text fontSize={"13px"} py={5}>2023 CartRoyal All Rigths Reserved</Text>
     
         </Box>
     )
