@@ -12,7 +12,7 @@
 }
 
 .swiper-menu{
-  color:#fff !important
+  /* color:#fff !important */
 }
 
 button:hover{
@@ -28,6 +28,7 @@ button:hover{
 ::-webkit-scrollbar-thumb {
   appearance: none;
   border-radius: 10px;
+  background: #ddd;
 }
 
 :root {
@@ -39,7 +40,8 @@ body{
   background-position: center center;
   background-size: cover; */
   /* background: #000 !important;
-  color: #fff !important; */
+  */
+  color: #000 !important;
 }
 
 .anton,

@@ -16,7 +16,7 @@ const SliderMenu = () => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
     >
-      <Box  pos={"relative"} minH="80vh" bg="#C1272D" as={SwiperSlide}>
+      <Box  pos={"relative"} minH="50vh" bg="#C1272D" as={SwiperSlide}>
         <Image
           pos={"absolute"}
           right={"-40%"}
@@ -36,7 +36,7 @@ const SliderMenu = () => {
             </Button>
             <DownloadSource />
           </Box>
-          <Image position={"relative"} zIndex={1} p={0} my={10} src="/assets/phones.png" w="550px" />
+          <Image position={"relative"} zIndex={1} p={0} my={10} src="/assets/phones.png" w="500px" />
         </Flex>
       
       </Box>
