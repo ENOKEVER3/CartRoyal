@@ -8,7 +8,7 @@ import DownloadSource from "./DownloadSource";
 const SliderMenu = () => {
   return (
     <Swiper
-      className="swiper-menu"
+      className="swiper-main-menu"
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}

@@ -11,9 +11,7 @@
   /* overflow-y: hidden; */
 }
 
-.swiper-menu{
-  /* color:#fff !important */
-}
+
 
 button:hover{
   background-color: #323232 !important;
@@ -23,6 +21,7 @@ button:hover{
 ::-webkit-scrollbar {
   appearance: none;
   width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,6 +29,11 @@ button:hover{
   border-radius: 10px;
   background: #ddd;
 }
+
+.chakra-checkbox__control.css-1ydjfm6{
+  border-radius: 100px !important;
+}
+
 
 :root {
   --primary-color: darkorange;
@@ -66,6 +70,9 @@ button {
   background: #ff6b51a5;
   color: #fff;
 }
+.swiper-main-menu{
+  color: #fff;
+}
 
 /* responsiveness */
 
@@ -88,6 +95,7 @@ button {
   }
   .cta .cta-img{
     margin: auto;
+    width: 100% !important;
     align-self: normal !important;
   }
 }
@@ -98,4 +106,18 @@ button {
   .action-menu button{
     display: none;
   }
+}
+
+
+@media screen and (max-width:700px) {
+  .product_filter_lists_category{
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .cart-container{
+   flex-direction: column;
+  }
+
 }
