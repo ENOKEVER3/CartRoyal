@@ -1,3 +1,4 @@
+import Logo from "@/components/Logo";
 import {
   Box,
   Button,
@@ -47,18 +48,18 @@ const LocaleMenu = () => {
 const TopNav = () => {
   return (
     <Flex className="top-nav" px={6} fontSize={"13px"} py={2} bg="#eee" color={"#111"}>
-      <Box flex={1}></Box>
+      <Box flex={1} visibility={{lg :"visible", md : "visible",sm : 'hidden', base : 'hidden' }}><Logo /></Box>
 
       <Flex justifySelf={"flex-end"} as={"nav"} align={"center"} gap={6}>
         <LocaleMenu />
-        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="">
+        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/seller">
           Become a seller
         </Link>
-        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="">
-          Login
+        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/login">
+          Sign In
         </Link>
-        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="">
-          Register
+        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/signup">
+          SignUp
         </Link>
       </Flex>
     </Flex>
