@@ -1,7 +1,7 @@
 import Logo from "@/components/Logo";
 import Footer from "@/layouts/Footer";
 import SellersForm from "@/layouts/SellersForm";
-import { Box, Flex, Heading, Link } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Link } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
 

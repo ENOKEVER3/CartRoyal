@@ -52,7 +52,7 @@ const TopNav = () => {
 
       <Flex justifySelf={"flex-end"} as={"nav"} align={"center"} gap={6}>
         <LocaleMenu />
-        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/seller">
+        <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/sellers/seller_login">
           Become a seller
         </Link>
         <Link color={"inherit"} fontSize={"inherit"} as={NextLink} href="auth/login">

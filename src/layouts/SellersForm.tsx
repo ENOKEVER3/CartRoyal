@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Checkbox,
   Flex,
   FormControl,
@@ -8,6 +9,7 @@ import {
   Select,
   Text,
 } from "@chakra-ui/react";
+import { ArrowCircleRight2, ArrowRight, ArrowRight2 } from "iconsax-react";
 import React from "react";
 
 const SellersForm = () => {
@@ -57,6 +59,7 @@ const SellersForm = () => {
               I have read and accepted theE-Contract Jumia Nigeria
             </Checkbox>
           </Flex>
+          <Button rightIcon={<ArrowCircleRight2 size={20} />} width={'full'}>Next</Button>
         </Box>
         <Box p={5} border={'1px solid #ddd'} height={'fit-content'} borderRadius={20}>
         <Text fontSize={'25px'}>Smart Quality Control</Text>
