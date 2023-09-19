@@ -6,7 +6,7 @@
   margin: 0;
   font-family: "Georama" !important;
   font-weight: normal;
-  transition: all .4s;
+  /* background: #000000a1; */
   scroll-behavior: smooth;
   /* overflow-y: hidden; */
 }
