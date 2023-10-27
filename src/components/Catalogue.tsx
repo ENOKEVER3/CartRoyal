@@ -5,7 +5,7 @@ const Catalogue = () => {
   return (
     <Box p={10}>
       <Center flexDirection={"column"}>
-        <Heading>All the Catalogue ou love</Heading>
+        <Heading>All the Catalogue you love</Heading>
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vero!
         </Text>

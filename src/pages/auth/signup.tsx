@@ -25,7 +25,11 @@ const signup = () => {
       </Head>
       <TopNav />
       <Flex justifyContent={"center"} mt={"40px"} px={20}>
-        <Box border={"4px solid #FBB03B"} p={{lg : 10, md : 10, sm : 7, base :5}} borderRadius={30}>
+        <Box
+          border={"4px solid #FBB03B"}
+          p={{ lg: 10, md: 10, sm: 7, base: 5 }}
+          borderRadius={15}
+        >
           <Heading fontSize={30}>Hello User</Heading>
           <Text width={300} fontSize={12}>
             Welcome to Cart Royal
@@ -47,22 +51,20 @@ const signup = () => {
               width={300}
             />
           </FormControl>
-            
-        <Flex justifyContent={"space-between"} gap={2} py={3}>
-          <Button
-           width={'full'}
-           bg={"#C32E33"} color={"#fff"}>
-            Sign Up
-          </Button>
-          {/* <Button
+
+          <Flex justifyContent={"space-between"} gap={2} py={3}>
+            <Button width={"full"} bg={"#C32E33"} color={"#fff"}>
+              Sign Up
+            </Button>
+            {/* <Button
             width={'full'}
             bg={"linear-gradient(45deg, #C32E33,#C32E33)"}
             color={"#fff"}
           >
             SignUp
           </Button> */}
-        </Flex>
-          <Flex justifyContent={'center'}>
+          </Flex>
+          <Flex justifyContent={"center"}>
             <Text as={Link} href="/auth/login" textAlign={"center"}>
               Already have an account? Login
             </Text>
@@ -70,11 +72,18 @@ const signup = () => {
         </Box>
       </Flex>
 
-      <Flex gap={4} alignItems={'center'} justifyContent={'center'} fontSize={14} color={"rgb(69, 69, 69)"} pt={8}>
-      <Text>All Rights Reserved</Text>
-      <Text>|</Text>
-      <Logo />
-    </Flex>
+      <Flex
+        gap={4}
+        alignItems={"center"}
+        justifyContent={"center"}
+        fontSize={14}
+        color={"rgb(69, 69, 69)"}
+        pt={8}
+      >
+        <Text>All Rights Reserved</Text>
+        <Text>|</Text>
+        <Logo />
+      </Flex>
     </>
   );
 };

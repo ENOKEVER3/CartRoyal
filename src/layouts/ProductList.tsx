@@ -28,11 +28,11 @@ import { Heart } from "iconsax-react";
 import React from "react";
 import Footer from "./Footer";
 
-const ProductList = ({ title }: { title: string }) => {
+const ProductList = ({ title }: { title?: string }) => {
   return (
     <>
       <Flex px={30} gap={10} pb={10}>
-        <Box w={"250px"} className="product_filter_lists_category">
+        <Box w={"300px"} className="product_filter_lists_category">
           <ProductFeatureMenu title="Categories">
             <Box height={"200px"} overflowY={"auto"}>
               {constants.categories.map((cat) => (
@@ -55,7 +55,7 @@ const ProductList = ({ title }: { title: string }) => {
           </ProductFeatureMenu>
 
           <ProductFeatureMenu title="Price">
-            <Box>
+            <Box w={"full"}>
               <PriceRange />
               <Flex align={"center"} gap={3} justify={"space-evenly"}>
                 <Input type="number" placeholder="From" />
@@ -150,22 +150,26 @@ const ProductList = ({ title }: { title: string }) => {
         </Box>
 
         <Box w={"full"}>
-          <Box w="full">
-            <Heading
-              mb={3}
-              fontSize={"2rem"}
-              justifySelf={"flex-start"}
-              textTransform={"capitalize"}
-            >
-              {title} Store{" "}
-              <Text fontSize={"13px"} as="span">
-                ( 1105,6667 Results )
-              </Text>
-            </Heading>
-            <CategoryTagFilter />
-          </Box>
+          {title && (
+            <>
+              <Box w="full" mb={5}>
+                <Heading
+                  mb={3}
+                  fontSize={"2rem"}
+                  justifySelf={"flex-start"}
+                  textTransform={"capitalize"}
+                >
+                  {title} Store{" "}
+                  <Text fontSize={"13px"} as="span">
+                    ( 1105,6667 Results )
+                  </Text>
+                </Heading>
+                <CategoryTagFilter />
+              </Box>
+            </>
+          )}
 
-          <Box my={5}>
+          <Box mb={5}>
             {/* main content here */}
 
             <Grid

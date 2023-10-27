@@ -17,11 +17,13 @@ import { Heading, Image, Text } from "@chakra-ui/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
+
 const index = () => {
   return (
     <>
       <Head>
-        <title>Royal Cart - Shop </title>
+        <title>Cart-Royal Shop</title>
         <meta name="description" content="......" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -62,7 +64,6 @@ const index = () => {
                 width: 1000,
                 slidesPerView: 4,
               },
-
               1400: {
                 width: 1400,
                 slidesPerView: 5,
